@@ -1,4 +1,28 @@
 {% extends 'shared/layout.html'%}
 {%block content%}
-    <h1>Ideias Malucas</h1>
+<h1>Ideias Malucas</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <label>Nome</label>
+    <input type="text" name="nome">
+
+    <label>Sobrenome</label>
+    <input type="text" name="sobrenome">
+
+    <label>E-mail</label>
+    <input type="email" name="email">
+
+    <label>Gênero</label>
+    <select name="genero">
+        <option value=" ">Selecione</option>
+        <option value="F">Feminino</option>
+        <option value="M">Masculino</option>
+        <option value="O">Outro</option>
+    </select>
+    <label>Biografia</label>
+    <input type="text name="biografia">
+
+    <input type="submit" value="Cadastrar">
+
+</form>
 {%endblock%}

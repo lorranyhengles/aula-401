@@ -1,5 +1,10 @@
 {% extends 'shared/layout.html'%}
 {%block content%}
-<h1>Oiiiii </h1>
+<h1> Lista de Pessoas </h1>
+<ul>
+{% for pessoa in pessoas %}
+    <li>{{pessoa.nome}} {{pessoa.sobrenome}}</li>
+{% endfor %}
+</ul>
 {%include 'shared/teste.html'%}
 {%endblock%}

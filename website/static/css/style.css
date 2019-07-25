@@ -1,5 +1,6 @@
 body{
     background-color: #f214fa;
+    display: flex;
 }
 ul{
     font-size: 20pt;
