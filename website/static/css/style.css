@@ -1,8 +1,12 @@
 body{
-    background-color: #f214fa;
+    background-color: #d183c4;
+}
+form{
     display: flex;
+    flex-direction: column;
+    width: 50%;
+   
 }
 ul{
     font-size: 20pt;
-    align-content: center;
 }
